@@ -1,0 +1,285 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "walletAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "firstName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "lastName",
+						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "canRent",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "active",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "balance",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "due",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "start",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "end",
+						"type": "uint256"
+					}
+				],
+				"name": "addRenter",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "balanceOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "walletAddress",
+						"type": "address"
+					}
+				],
+				"name": "balanceOfRenter",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "walletAddress",
+						"type": "address"
+					}
+				],
+				"name": "canRentBike",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "walletAddress",
+						"type": "address"
+					}
+				],
+				"name": "checkIn",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "walletAddress",
+						"type": "address"
+					}
+				],
+				"name": "checkOut",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "walletAddress",
+						"type": "address"
+					}
+				],
+				"name": "deposit",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "walletAddress",
+						"type": "address"
+					}
+				],
+				"name": "getTotalDuration",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "walletAddress",
+						"type": "address"
+					}
+				],
+				"name": "makePayment",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "renters",
+				"outputs": [
+					{
+						"internalType": "address payable",
+						"name": "walletAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "firstName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "lastName",
+						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "canRent",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "active",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "balance",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "due",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "start",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "end",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Automobchain.sol": "Automobchain"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Automobchain.sol": {
+			"keccak256": "0x203a8a40394cf3b70f4dfcc0488fb4a542148b11f5ef8c8af0e272daa2f11d75",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://060ca3152a001c968b33187761b0d74bb4b2d0355260b23d563f130403fb85f5",
+				"dweb:/ipfs/QmPpfW1yEYJ7uY8qHVXhagEEcXPesvqyssxnGs65Y59jjy"
+			]
+		}
+	},
+	"version": 1
+}
